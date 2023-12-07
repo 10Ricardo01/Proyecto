@@ -1,0 +1,128 @@
+#include <iostream>
+
+using namespace std;
+
+void Creditos()
+{
+    cout << "Desarrollado por: Ricardo Arturo Valles Hernández" << endl;
+    cout << "Versión 1.0 23/Nov/2023" << endl;
+}
+
+int main()
+{
+    int opcion = 0;
+
+    cout<<"\n";
+    cout<<"Una noche en la FES\n\n\n\n";
+    cout<<"Menú\n1. Nueva partida\n2. De que trata??\n3. No se jugar :c\n4. Creditos \n0. Salir del juego\n";
+    
+    cin >> opcion;
+    
+    switch(opcion)
+    {
+        case 1:
+        if (opcion == 1)
+        {
+            cout<<"Presiona \"0\" en cualquier momento de la partida para salir\n\n\n\n";
+            
+            cout<<"Te quedaste dormido en el salón y acabas de despertar dentro del 1158\n";
+            cout<<"Intentas abrir la puerta para salir pero lleva una cerradura de contraseña\n";
+    
+                do
+                {
+                cout<<"¿Que deseas hacer?\n";
+                cout<<"1. ver a tu al rededor\n2. intentar abrir la puerta\n";
+                cin>>opcion;
+                
+                    switch(opcion)
+                    {
+                        case 1:
+                        
+                        cout<<"Dentro del salón ves la puerta de salida, un reloj sobre el pizarrón, la ventana y por supuesto, sillas\n";
+                        
+                        do
+                        {
+                            if(opcion == 1)
+                            {
+                                cout<<"¿Que deseas hacer?\n";
+                                cout<<"1. intentar abrir la puerta\n2. ir a checar el reloj\n3. mirar la ventana\n4. buscar algo entre las sillas\n";
+                                cin>>opcion;
+                                
+                                switch(opcion)
+                                {
+                                    case 1:
+                                    if (opcion == 1)
+                                    {
+                                        cout<<"La puerta necesita una contraseña para poder abrirse\n";
+                                        cout<<"Ingresar contraseña\n";
+                                    }break;
+                                    
+                                    case 2:
+                                    if (opcion == 2)
+                                    {
+                                        cout<<"Tras un tiempo de mirar al reloj notas que una nota doblada cae de su parte trasera\n";
+                                        cout<<"Al desdoblarla te percatas que dentro viene un mensaje incrito:\n";
+                                        
+                                        cout<<"\"ingenieria\", es la palabra que tenia inscrita dentro de si\n";
+                                        cout<< "Vuelves a dejar la nota en donde la encontraste y continuas buscando\n";
+                                    }break;
+                                    
+                                    case 3:
+                                    if (opcion == 3)
+                                    {
+                                        cout<<"Te acercas a la ventana\n";
+                                        cout<<"Es muy alto para saltar y la verdad no creo que quepas por ese pequeño agujero\n";
+                                    }break;
+                                    
+                                    case 4:
+                                    if (opcion == 4){
+                                        cout<<"Aunque son demasiadas sillas logas encontrar debajo de una de ellas\n";
+                                        cout<<"Al desdoblarla alcanzas a ver su interior\n";
+                                        cout<<"";
+                                    }
+                                }
+                            }
+                        }while(opcion==1);
+                        
+                        case 2:
+                        if(opcion == 2){
+                            cout<<"Está puerta no abrirá sin una clave\n";
+                        }
+                    }
+        
+                }while(opcion == 2);
+        }
+        
+        case 2:
+        if (opcion == 2)
+        {
+            
+            cout <<"\t\t///////////////////////////////////////////////\n";
+            cout <<"\t\t//        Bienvenido a \"Una noche en la FES\"          //\n";
+            cout <<"\t\t///////////////////////////////////////////////\n\n";
+
+            cout << "\n";
+            
+            cout <<"\t\t/////////////////////////////////////////////\n";
+            cout <<"\t\t//             ¡Buena suerte!              //\n";
+            cout <<"\t\t/////////////////////////////////////////////\n";
+        }
+        
+        case 3:
+        if (opcion == 3)
+        {
+            cout << "'";
+        }
+        
+        case 4:
+        if (opcion == 4)
+        {
+        Creditos();
+        }
+        
+        default:
+        break;
+    }
+    
+    return 0;
+}
