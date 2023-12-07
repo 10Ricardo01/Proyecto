@@ -1,0 +1,53 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int opcion = 0;
+    int vida = 0;
+    cout << "Acabas de entrar al bosque, frente a ti hay un camino que se dirije a lo profundo del bosque, mientras que a tu derecha hay un puente que cruza un riachuelo. ¿Qué deseas hecer?\n";
+    cout<<"1. salir del bosque\n2. dirigirte a lo profundo\n3. cruzar el riachuelo\n";
+    cin>>opcion;
+    
+    switch(opcion){
+        case 1:
+        if(opcion == 1 || opcion == 6){
+            cout<<"Al regresar a tu auto alcanzas a observar tu mochila de excursión\n";
+            cout<<"¡¡LA HABÍAS OLVIDADO!!\n";
+            cout<<"¿Qué sería de ti si hubieras entrado?";
+        }
+        case 2:
+        if(opcion== 2) {
+            cout<<"Entras a una zona más profunda del bosque y de alguna manera has perdido el camino\n";
+            cout<<"Uh oh\nIntentas buscar el mapa en tu mochila, pero recuerdas que lo has olvidado en el coche\n";
+            
+            do{
+                cout <<"¿Qué deseas hacer?\n";
+                cout<<"1. intentar volver sobre tus pasos\n2. avanzar esperando encontrar algo\n3. gritar por ayuda y esperar\n";
+                cin>>opcion;
+                
+                switch(opcion){
+                    case 1:
+                    if(opcion == 1){
+                        cout<<"Cómo no recordabas bien tus pasos no lograste llegar a la entrada del bosque\n";
+                        cout<<"Pero lograste llegar a una colina alta desde la cual probablemente podrias visualizar mejor tu entorno\n";
+                        
+                        cout<<"¿Que deseas hacer?";
+                        cout<<"1. intentas subir la colina\n2. sigues explorando esperando encontrar alguna señal que te ayude\nbuscas comida\n";
+                        cin>>opcion;
+                        
+                    }
+                    
+                    case 2:
+                    if(opcion== 2){
+                    }
+                }
+                
+                if(opcion == 3){
+                    cout<<"avanzaste demasiado y no hay nadie en rededor que te escuché\n"; 
+                }
+            }while(opcion == 3);
+        }
+    }
+    
+}
