@@ -1,0 +1,103 @@
+#include <iostream>
+using namespace std;
+
+void Creditos(){
+    cout << "Desarrollado por: Ricardo Arturo Valles Hernández" << endl;
+    cout << "Versión 1.0 23/Nov/2023" << endl;
+}
+
+int main(){
+    int minFaltantes = 270;
+    int opcion = 0;
+    
+    cout << "UNA NOCHE EN LA FES\n \n \n \n";
+    cout << "Menú\n1. Nueva partida\n2. De qué trata??\n3. No sé jugar :c\n4. Créditos \n5. Salir del juego\n";
+    
+    cin >> opcion;
+    
+    switch(opcion) {
+        case 1: {
+            cout << "Despiertas dentro de un salón en la FES.\n";
+            cout << "Parece que la puerta está cerrada.\n";
+            cout << "Miras el reloj de tu mano, son las 12:30 a.m\n";
+            cout << "Tienes que salir de la FES antes de las 5:00 a.m, que es la hora a la que comienzan a darle haceo.\n";
+            
+            cout << "Cuando miras a tu alrededor solo alcanzas a ver:\n\n";
+            
+            cout << "1. La puerta\n2. Un reloj en la pared\n3. La ventana\n4. Las sillas\n\n";
+            
+            do {
+                cout << "Te quedan " << minFaltantes << " minutos para escapar\n";
+                cout << "¿Qué deseas hacer?\n";
+                cout << "1. Intentar abrir la puerta\n2. Revisar el reloj\n3. Acercarte a la ventana\n4. Revisar las sillas\ncualquier otra tecla. Salir\n";
+                
+                cin >> opcion;
+                
+                switch(opcion) {
+                    case 1: {
+                        cout << "Te quedan " << minFaltantes << " minutos para escapar\n";
+                        cout << "Al parecer necesita una contraseña para poder abrirse\n";
+                        cout << "Ingresar contraseña\n(Si no ingresas la correcta deberás seguir explorando el salón)\n";
+                        cin >> opcion;
+                        cout << "\n\n";
+                        minFaltantes = minFaltantes - 5;
+                    } break;
+                    
+                    case 2: {
+                        cout << "Te quedan " << minFaltantes << " minutos para escapar\n";
+                        cout << "Parece ser que el reloj está descompuesto, solo marca la misma hora\n";
+                        cout << "No tiene nada de interesante el reloj\n";
+                        cout << "Salvo que pertenece a una extraña marca llamada:\n";
+                        cout << "kebai\n\n";
+                        minFaltantes = minFaltantes - 5;
+                    } break;
+                    
+                    case 3: {
+                        cout << "Te quedan " << minFaltantes << " minutos para escapar\n";
+                        cout << "Parece muy alto para saltar.\n";
+                        cout << "Y ese agujero es muy estrecho para que entre una persona\n\n";
+                        minFaltantes = minFaltantes - 5;
+                    } break;
+                    
+                    case 4: {
+                        cout << "Te quedan " << minFaltantes << " minutos para escapar\n";
+                        cout << "Son demasiadas sillas y te toma bastante tiempo, pero logras encontrar una nota donde se alcanza a leer:\n";
+                        cout << "u=5,r=6, t=7, o=3, a=9, b=4, k=2, e=8, i=0, p=1\n\n";
+                        minFaltantes = minFaltantes - 20;
+                    } break;
+                }
+            } while(opcion != 28490 && minFaltantes > 0 && (opcion == 1||opcion == 2||opcion == 3||opcion == 4));
+            
+            cout << "Al parecer esa sí era la contraseña, la puerta se abrió :D\n";
+            cout << "Te quedan " << minFaltantes << " minutos para escapar\n\n";
+            
+        } break;
+        
+        
+        case 2: {
+            cout << "\t\t///////////////////////////////////////////////\n";
+            cout << "\t\t//        Bienvenido a 'UNA NOHE EN LA FES'          //\n";
+            cout << "\t\t///////////////////////////////////////////////\n\n";
+
+            cout << "Dentro de una noche en Aragon eres una alumno que se quedo dormido dentro de un salon de la FES; sin embargo esta cerrada la puerta y tendras que encontrar la manera de salir antes de que llegue el personal de limpieza, ya que de lo contrario te reportarian y llevarian a juridica; Tampoco puedes dejarte ver por los guardias de seguridad por la misma razón.\n";
+
+            cout << "\t\t/////////////////////////////////////////////\n";
+            cout << "\t\t//             ¡Buena suerte!              //\n";
+            cout << "\t\t/////////////////////////////////////////////\n";
+        } break;
+
+        case 3: {
+            cout << "Es juego es realmente muy sencillo unicamente necesitaras elegir alguna de las opciones que te presente el juego en determinado momento. Para escogerla unicamente deberas presioanr con tu teclado el numero que representa la opcion que desas";
+        } break;
+
+        case 4: {
+            Creditos();
+        } break;
+
+        default: {
+            break;
+        }
+    }
+
+    return 0;
+}
