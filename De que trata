@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+void Creditos(){
+    cout << "Desarrollado por: Ricardo Arturo Valles Hernández" << endl;
+    cout << "Versión 1.0 23/Nov/2023" << endl;
+}
+
+int main(){
+    int minFaltantes = 270;
+    int opcion = 0;
+    
+    cout << "UNA NOCHE EN LA FES\n \n \n \n";
+    cout << "Menú\n1. Nueva partida\n2. De qué trata??\n3. No sé jugar :c\n4. Créditos \n5. Salir del juego\n";
+    
+    cin >> opcion;
+    
+    switch(opcion) {
+        case 1: {
+
+        } break;
+        
+        
+        case 2: {
+            cout << "\t\t///////////////////////////////////////////////\n";
+            cout << "\t\t//        Bienvenido a 'UNA NOHE EN LA FES'          //\n";
+            cout << "\t\t///////////////////////////////////////////////\n\n";
+
+            cout << "Dentro de una noche en Aragon eres una alumno que se quedo dormido dentro de un salon de la FES; sin embargo esta cerrada la puerta y tendras que encontrar la manera de salir antes de que llegue el personal de limpieza, ya que de lo contrario te reportarian y llevarian a juridica; Tampoco puedes dejarte ver por los guardias de seguridad por la misma razón.\n";
+
+            cout << "\t\t/////////////////////////////////////////////\n";
+            cout << "\t\t//             ¡Buena suerte!              //\n";
+            cout << "\t\t/////////////////////////////////////////////\n";
+        } break;
+
+        case 3: {
+            cout << "Es juego es realmente muy sencillo unicamente necesitaras elegir alguna de las opciones que te presente el juego en determinado momento. Para escogerla unicamente deberas presioanr con tu teclado el numero que representa la opcion que desas";
+        } break;
+
+        case 4: {
+            Creditos();
+        } break;
+
+        default: {
+            break;
+        }
+    }
+
+    return 0;
+}
