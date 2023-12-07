@@ -1,0 +1,80 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int tiempo = 0;
+    int opcion = 0;
+    
+    cout<<"Despiertas dentro de un salón en la FES.\n";
+    cout<<"Parece que la puerta está cerrada y necesita un contraseña para ser abierta.\n";
+    cout<<"Cuando mieras a tu rededor solo alcanzas a ver:\n";
+    
+    cout<<"La puerta\nUn reloj en la pared\nLa ventana\nSillas"
+    
+    do{
+        cout<<"¿Que deseas hacer?\n";
+        cout << "1. intentar abrir la puerta\n2. Revisar el reloj\nAcercarse a la ventana\nRevisar las sillas"
+        switch(opcion){
+            case 1:
+            
+            
+            case 2: 
+            
+            
+            case 3:
+            
+            
+            case 4:
+        }
+    }while(opcion != 28492)
+    
+    do{
+        switch(opcion){
+            case 1:
+            
+            case 2:
+            
+            case 3:
+            
+            case 4:
+        }
+    }
+    
+   do{
+        switch(opcion){
+            case 1:
+            
+            case 2:
+            
+            case 3:
+            
+            case 4:
+        }
+    }
+    
+   do{
+        switch(opcion){
+            case 1:
+            
+            case 2:
+            
+            case 3:
+            
+            case 4:
+        }
+    }
+    
+   do{
+        switch(opcion){
+            case 1:
+            
+            case 2:
+            
+            case 3:
+            
+            case 4:
+        }
+    }
+    return 0;
+}
